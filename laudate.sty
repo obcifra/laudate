@@ -1,0 +1,24 @@
+\ProvidesPackage{laudate}
+
+\usepackage[width=2.5in,height=3.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[x11names]{xcolor}
+
+\usepackage{erewhon}
+\usepackage{lettrine}
+\usepackage{GoudyIn}
+\usepackage{verse}
+\usepackage{mdframed}
+
+\pagenumbering{gobble}
+
+\newcommand{\attrib}[1]{%
+\nopagebreak{\raggedleft\footnotesize #1\par}}
+
+\renewcommand{\poemtitlefont}{\normalfont\large\itshape\centering}
+
+\renewcommand{\LettrineFontHook}{\color{VioletRed4}\GoudyInfamily{}}
+
+\LettrineTextFont{\itshape}
+
+\setcounter{DefaultLines}{3}
