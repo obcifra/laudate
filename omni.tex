@@ -1,6 +1,41 @@
-\documentclass{report}
-\usepackage{pdfpages}
+\documentclass{article}
+\usepackage{laudate}
+\usepackage{pgfpages}
+\usepackage[paperwidth=2.5in,
+            paperheight=3.5in,
+            top=0.25in,
+            bottom=0.25in,
+            left=0.25in,
+            right=0.25in]{geometry}
+
+\pgfpagesuselayout{4 on 1}[letterpaper]
+
+\pgfpageslogicalpageoptions{1}{
+  border code=\pgfusepath{stroke},
+  resized height=3.5in
+}
+\pgfpageslogicalpageoptions{2}{
+  border code=\pgfusepath{stroke},
+  resized height=3.5in
+}
+\pgfpageslogicalpageoptions{3}{
+  border code=\pgfusepath{stroke},
+  resized height=3.5in
+}
+\pgfpageslogicalpageoptions{4}{
+  border code=\pgfusepath{stroke},
+  resized height=3.5in
+}
+
+\usepackage{subfiles}
+
 \begin{document}
-\includepdf[pages=-]{pater.pdf}
-\includepdf[pages=-]{ave.pdf}
+
+\subfile{cards/pater}
+
+\subfile{cards/ave}
+
+\subfile{cards/credo}
+
 \end{document}
+
