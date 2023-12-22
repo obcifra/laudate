@@ -2,3 +2,5 @@
 *.log
 *.pdf
 *.rubbercache
+
+.DS_Store
