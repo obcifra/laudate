@@ -6,6 +6,9 @@ A set of essential Catholic prayers in Latin, of course.
 2. `pipenv shell`: Drop into the local project python/pip environment
 3. `make all`: Build all pdf documents
 
+## Icon Dimensions
+Crop all icons using fixed aspect ratio: `50.8mm:76.2mm`.
+
 ## TeX Package Dependencies
 ```bash
 tlmgr install collection-latex cfr-initials erewhon etoolbox \
